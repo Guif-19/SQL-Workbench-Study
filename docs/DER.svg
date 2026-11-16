@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="900" viewBox="0 0 1680 900">
+<rect x="0" y="0" width="1680" height="900" rx="0" fill="#f3f6fa" stroke="none"/>
+<rect x="0" y="0" width="1680" height="170" rx="0" fill="#13283e" stroke="none"/>
+<text x="60" y="70" font-size="40" fill="#ffffff" font-weight="700" font-family="Segoe UI,Arial,sans-serif">DER | Estrutura do banco</text>
+<text x="60" y="118" font-size="22" fill="#c3d4e5" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Três tabelas relacionadas por chaves estrangeiras • Todos os campos são NOT NULL</text>
+<rect x="60" y="220" width="430" height="263" rx="16" fill="#ffffff" stroke="#cbd7e3"/>
+<rect x="60" y="220" width="430" height="64" rx="16" fill="#234c73" stroke="none"/>
+<text x="82" y="263" font-size="27" fill="#ffffff" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Clientes</text>
+<rect x="78" y="299" width="37" height="25" rx="5" fill="#e4edf8" stroke="none"/>
+<text x="83" y="318" font-size="15" fill="#234c73" font-weight="700" font-family="Segoe UI,Arial,sans-serif">PK</text>
+<text x="127" y="318" font-size="21" fill="#172d44" font-weight="600" font-family="Segoe UI,Arial,sans-serif">idCliente</text>
+<text x="127" y="341" font-size="17" fill="#596f84" font-weight="400" font-family="Segoe UI,Arial,sans-serif">INT UNSIGNED • AUTO_INCREMENT</text>
+<rect x="78" y="358" width="37" height="25" rx="5" fill="#e4edf8" stroke="none"/>
+<text x="83" y="377" font-size="15" fill="#234c73" font-weight="700" font-family="Segoe UI,Arial,sans-serif">UQ</text>
+<text x="127" y="377" font-size="21" fill="#172d44" font-weight="600" font-family="Segoe UI,Arial,sans-serif">CPF</text>
+<text x="127" y="400" font-size="17" fill="#596f84" font-weight="400" font-family="Segoe UI,Arial,sans-serif">CHAR(11) • obrigatório e único</text>
+<text x="127" y="436" font-size="21" fill="#172d44" font-weight="600" font-family="Segoe UI,Arial,sans-serif">nome</text>
+<text x="127" y="459" font-size="17" fill="#596f84" font-weight="400" font-family="Segoe UI,Arial,sans-serif">VARCHAR(120) • obrigatório</text>
+<rect x="625" y="220" width="430" height="381" rx="16" fill="#ffffff" stroke="#cbd7e3"/>
+<rect x="625" y="220" width="430" height="64" rx="16" fill="#234c73" stroke="none"/>
+<text x="647" y="263" font-size="27" fill="#ffffff" font-weight="700" font-family="Segoe UI,Arial,sans-serif">ContasCorrentes</text>
+<rect x="643" y="299" width="37" height="25" rx="5" fill="#e4edf8" stroke="none"/>
+<text x="648" y="318" font-size="15" fill="#234c73" font-weight="700" font-family="Segoe UI,Arial,sans-serif">PK</text>
+<text x="692" y="318" font-size="21" fill="#172d44" font-weight="600" font-family="Segoe UI,Arial,sans-serif">idConta</text>
+<text x="692" y="341" font-size="17" fill="#596f84" font-weight="400" font-family="Segoe UI,Arial,sans-serif">INT UNSIGNED • AUTO_INCREMENT</text>
+<rect x="643" y="358" width="37" height="25" rx="5" fill="#e4edf8" stroke="none"/>
+<text x="648" y="377" font-size="15" fill="#234c73" font-weight="700" font-family="Segoe UI,Arial,sans-serif">FK</text>
+<text x="692" y="377" font-size="21" fill="#172d44" font-weight="600" font-family="Segoe UI,Arial,sans-serif">idCliente</text>
+<text x="692" y="400" font-size="17" fill="#596f84" font-weight="400" font-family="Segoe UI,Arial,sans-serif">INT UNSIGNED → Clientes</text>
+<rect x="643" y="417" width="37" height="25" rx="5" fill="#e4edf8" stroke="none"/>
+<text x="648" y="436" font-size="15" fill="#234c73" font-weight="700" font-family="Segoe UI,Arial,sans-serif">UQ</text>
+<text x="692" y="436" font-size="21" fill="#172d44" font-weight="600" font-family="Segoe UI,Arial,sans-serif">numeroConta</text>
+<text x="692" y="459" font-size="17" fill="#596f84" font-weight="400" font-family="Segoe UI,Arial,sans-serif">VARCHAR(20) • obrigatório e único</text>
+<text x="692" y="495" font-size="21" fill="#172d44" font-weight="600" font-family="Segoe UI,Arial,sans-serif">saldo</text>
+<text x="692" y="518" font-size="17" fill="#596f84" font-weight="400" font-family="Segoe UI,Arial,sans-serif">DECIMAL(12,2) • DEFAULT 0.00</text>
+<text x="692" y="554" font-size="21" fill="#172d44" font-weight="600" font-family="Segoe UI,Arial,sans-serif">limiteCredito</text>
+<text x="692" y="577" font-size="17" fill="#596f84" font-weight="400" font-family="Segoe UI,Arial,sans-serif">DECIMAL(12,2) • DEFAULT 0.00</text>
+<rect x="1190" y="220" width="430" height="381" rx="16" fill="#ffffff" stroke="#cbd7e3"/>
+<rect x="1190" y="220" width="430" height="64" rx="16" fill="#234c73" stroke="none"/>
+<text x="1212" y="263" font-size="27" fill="#ffffff" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Movimentacoes</text>
+<rect x="1208" y="299" width="37" height="25" rx="5" fill="#e4edf8" stroke="none"/>
+<text x="1213" y="318" font-size="15" fill="#234c73" font-weight="700" font-family="Segoe UI,Arial,sans-serif">PK</text>
+<text x="1257" y="318" font-size="21" fill="#172d44" font-weight="600" font-family="Segoe UI,Arial,sans-serif">idMovimentacao</text>
+<text x="1257" y="341" font-size="17" fill="#596f84" font-weight="400" font-family="Segoe UI,Arial,sans-serif">INT UNSIGNED • AUTO_INCREMENT</text>
+<rect x="1208" y="358" width="37" height="25" rx="5" fill="#e4edf8" stroke="none"/>
+<text x="1213" y="377" font-size="15" fill="#234c73" font-weight="700" font-family="Segoe UI,Arial,sans-serif">FK</text>
+<text x="1257" y="377" font-size="21" fill="#172d44" font-weight="600" font-family="Segoe UI,Arial,sans-serif">idConta</text>
+<text x="1257" y="400" font-size="17" fill="#596f84" font-weight="400" font-family="Segoe UI,Arial,sans-serif">INT UNSIGNED → ContasCorrentes</text>
+<text x="1257" y="436" font-size="21" fill="#172d44" font-weight="600" font-family="Segoe UI,Arial,sans-serif">tipoMovimentacao</text>
+<text x="1257" y="459" font-size="17" fill="#596f84" font-weight="400" font-family="Segoe UI,Arial,sans-serif">ENUM(&#x27;DEPOSITO&#x27;,&#x27;SAQUE&#x27;)</text>
+<text x="1257" y="495" font-size="21" fill="#172d44" font-weight="600" font-family="Segoe UI,Arial,sans-serif">valor</text>
+<text x="1257" y="518" font-size="17" fill="#596f84" font-weight="400" font-family="Segoe UI,Arial,sans-serif">DECIMAL(12,2) • maior que zero</text>
+<text x="1257" y="554" font-size="21" fill="#172d44" font-weight="600" font-family="Segoe UI,Arial,sans-serif">data</text>
+<text x="1257" y="577" font-size="17" fill="#596f84" font-weight="400" font-family="Segoe UI,Arial,sans-serif">DATETIME • data e hora</text>
+<path d="M490 400 H625" stroke="#4c6885" stroke-width="3" fill="none"/>
+<path d="M504 387 V413 M514 387 V413" stroke="#4c6885" stroke-width="3"/>
+<path d="M601 400 L625 385 M601 400 L625 415 M595 387 V413" stroke="#4c6885" stroke-width="3" fill="none"/>
+<text x="530" y="376" font-size="21" fill="#31557c" font-weight="700" font-family="Segoe UI,Arial,sans-serif">1 : N</text>
+<text x="515" y="445" font-size="17" fill="#536c85" font-weight="400" font-family="Segoe UI,Arial,sans-serif">possui</text>
+<path d="M1055 400 H1190" stroke="#4c6885" stroke-width="3" fill="none"/>
+<path d="M1069 387 V413 M1079 387 V413" stroke="#4c6885" stroke-width="3"/>
+<path d="M1166 400 L1190 385 M1166 400 L1190 415 M1160 387 V413" stroke="#4c6885" stroke-width="3" fill="none"/>
+<text x="1095" y="376" font-size="21" fill="#31557c" font-weight="700" font-family="Segoe UI,Arial,sans-serif">1 : N</text>
+<text x="1080" y="445" font-size="17" fill="#536c85" font-weight="400" font-family="Segoe UI,Arial,sans-serif">registra</text>
+<text x="60" y="665" font-size="19" fill="#31557c" font-weight="700" font-family="Segoe UI,Arial,sans-serif">REGRAS QUE O BANCO GARANTE</text>
+<rect x="60" y="687" width="430" height="110" rx="16" fill="#e5edf5" stroke="none"/>
+<text x="80" y="716" font-size="21" fill="#234c73" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Saldo e crédito</text>
+<text x="80" y="748" font-size="19" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">saldo ≥ −limiteCredito</text>
+<text x="80" y="778" font-size="19" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Convencional: limite = 0</text>
+<rect x="625" y="687" width="430" height="110" rx="16" fill="#e5edf5" stroke="none"/>
+<text x="645" y="716" font-size="21" fill="#234c73" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Integridade</text>
+<text x="645" y="748" font-size="19" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">PK: identifica • FK: relaciona</text>
+<text x="645" y="778" font-size="19" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">UQ: não permite duplicação</text>
+<rect x="1190" y="687" width="430" height="110" rx="16" fill="#e5edf5" stroke="none"/>
+<text x="1210" y="716" font-size="21" fill="#234c73" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Movimentações</text>
+<text x="1210" y="748" font-size="19" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Depósito soma; saque subtrai</text>
+<text x="1210" y="778" font-size="19" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Gatilhos validam e atualizam</text>
+<text x="60" y="838" font-size="19" fill="#536c85" font-weight="400" font-family="Segoe UI,Arial,sans-serif">ContaCorrente  •  Banco de Dados A1  •  MySQL</text>
+<text x="60" y="873" font-size="18" fill="#536c85" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Renan Dos Santos  /  Gustavo Ruffato  /  Nyck Michel</text>
+</svg>

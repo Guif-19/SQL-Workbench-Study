@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="900" viewBox="0 0 1680 900">
+<rect x="0" y="0" width="1680" height="900" rx="0" fill="#f3f6fa" stroke="none"/>
+<rect x="0" y="0" width="1680" height="170" rx="0" fill="#13283e" stroke="none"/>
+<text x="60" y="70" font-size="40" fill="#ffffff" font-weight="700" font-family="Segoe UI,Arial,sans-serif">MER | Contas e movimentações</text>
+<text x="60" y="118" font-size="22" fill="#c3d4e5" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Modelo conceitual • Um cliente possui contas; cada conta registra seu histórico financeiro</text>
+<rect x="60" y="250" width="430" height="350" rx="16" fill="#ffffff" stroke="#cbd7e3"/>
+<rect x="60" y="250" width="430" height="72" rx="16" fill="#234c73" stroke="none"/>
+<text x="84" y="298" font-size="29" fill="#ffffff" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Cliente</text>
+<text x="85" y="366" font-size="22" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Identificador do cliente</text>
+<text x="85" y="409" font-size="22" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Nome</text>
+<text x="85" y="452" font-size="22" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">CPF</text>
+<rect x="625" y="250" width="430" height="350" rx="16" fill="#ffffff" stroke="#cbd7e3"/>
+<rect x="625" y="250" width="430" height="72" rx="16" fill="#234c73" stroke="none"/>
+<text x="649" y="298" font-size="29" fill="#ffffff" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Conta-corrente</text>
+<text x="650" y="366" font-size="22" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Identificador e número da conta</text>
+<text x="650" y="409" font-size="22" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Cliente titular</text>
+<text x="650" y="452" font-size="22" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Saldo</text>
+<text x="650" y="495" font-size="22" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Limite de crédito</text>
+<rect x="1190" y="250" width="430" height="350" rx="16" fill="#ffffff" stroke="#cbd7e3"/>
+<rect x="1190" y="250" width="430" height="72" rx="16" fill="#234c73" stroke="none"/>
+<text x="1214" y="298" font-size="29" fill="#ffffff" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Movimentação</text>
+<text x="1215" y="366" font-size="22" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Identificador da movimentação</text>
+<text x="1215" y="409" font-size="22" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Conta movimentada</text>
+<text x="1215" y="452" font-size="22" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Tipo: depósito ou saque</text>
+<text x="1215" y="495" font-size="22" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Valor</text>
+<text x="1215" y="538" font-size="22" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Data e hora</text>
+<path d="M490 410 H625" stroke="#4c6885" stroke-width="3" fill="none"/>
+<path d="M504 397 V423 M514 397 V423" stroke="#4c6885" stroke-width="3"/>
+<path d="M601 410 L625 395 M601 410 L625 425 M595 397 V423" stroke="#4c6885" stroke-width="3" fill="none"/>
+<text x="530" y="386" font-size="21" fill="#31557c" font-weight="700" font-family="Segoe UI,Arial,sans-serif">1 : N</text>
+<text x="515" y="455" font-size="17" fill="#536c85" font-weight="400" font-family="Segoe UI,Arial,sans-serif">possui</text>
+<path d="M1055 410 H1190" stroke="#4c6885" stroke-width="3" fill="none"/>
+<path d="M1069 397 V423 M1079 397 V423" stroke="#4c6885" stroke-width="3"/>
+<path d="M1166 410 L1190 395 M1166 410 L1190 425 M1160 397 V423" stroke="#4c6885" stroke-width="3" fill="none"/>
+<text x="1095" y="386" font-size="21" fill="#31557c" font-weight="700" font-family="Segoe UI,Arial,sans-serif">1 : N</text>
+<text x="1080" y="455" font-size="17" fill="#536c85" font-weight="400" font-family="Segoe UI,Arial,sans-serif">registra</text>
+<rect x="60" y="650" width="1560" height="140" rx="16" fill="#e5edf5" stroke="none"/>
+<text x="85" y="691" font-size="24" fill="#234c73" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Cardinalidades do cenário</text>
+<text x="85" y="732" font-size="23" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Cada conta pertence a um cliente. Cada movimentação pertence a uma conta.</text>
+<text x="85" y="770" font-size="22" fill="#263649" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Massa inicial: 4 clientes • 4 contas • 12 movimentações • 1 conta especial com limite de R$ 5.000,00</text>
+<text x="60" y="838" font-size="19" fill="#536c85" font-weight="400" font-family="Segoe UI,Arial,sans-serif">ContaCorrente  •  Banco de Dados A1  •  MySQL</text>
+<text x="60" y="873" font-size="18" fill="#536c85" font-weight="400" font-family="Segoe UI,Arial,sans-serif">Renan Dos Santos  /  Gustavo Ruffato  /  Nyck Michel</text>
+</svg>
