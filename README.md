@@ -60,7 +60,7 @@ São cadastrados quatro clientes, quatro contas e doze movimentações. Os CPFs 
 | Renan Dos Santos | 0001-1 | -R$ 700,00 | R$ 5.000,00 |
 | Gustavo Ruffato | 0002-0 | R$ 1.350,25 | R$ 0,00 |
 | Nyck Michel | 0003-8 | R$ 1.750,75 | R$ 0,00 |
-| Ana Oliveira, fictícia | 0004-6 | R$ 550,50 | R$ 0,00 |
+| Ana Oliveira | 0004-6 | R$ 550,50 | R$ 0,00 |
 
 As contas são criadas com saldo zero; os valores acima resultam das movimentações inseridas pelo script. Datas e valores ficam fixos para garantir o mesmo resultado nas reexecuções.
 
